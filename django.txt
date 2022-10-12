@@ -1,0 +1,46 @@
+pip --version
+py -m venv myproject
+
+myproject\Scripts\activate.bat
+django-admin --version
+py -m pip install Django
+
+
+
+django-admin startproject myworld
+py manage.py runserver
+
+
+py manage.py startapp members
+
+
+
+python manage.py createsuperuser
+py manage.py migrate
+
+
+
+
+
+
+py manage.py makemigrations members
+
+
+##################################################secret key generation#########################################
+
+import string
+import secrets
+
+c = string.ascii_letters + string.digits + string.punctuation
+
+secret_key = ''.join(secrets.choice(c) for i in range(67))
+
+print(secret_key) 
+
+
+
+
+
+##################################################secret key generation#########################################
+YaW5V.vYiLpx7Ys5DHOUZ!:%?Zf@{l7|n$B^xq=y<`/J?v[#T!IT:S@c[xw%?27m0}1
+##################################################secret key generation#########################################
